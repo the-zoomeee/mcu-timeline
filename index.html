@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="referrer" content="strict-origin-when-cross-origin">
+<title>The Multiverse Ledger — MCU Timeline</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="noise"></div>
+
+<header>
+  <div class="eyebrow">Marvel Cinematic Universe · Est. 2008</div>
+  <h1>The Multiverse Ledger</h1>
+  <p class="sub">Every MCU film and series, plotted as a connected timeline. Switch between the order things were <em>released</em> and the order they <em>happen</em> in-story — the multiverse means those aren't the same list. Click any title to see what it connects to.</p>
+
+  <div class="controls">
+    <div class="tabs" id="tabs">
+      <button class="tab active" data-mode="release">Release Order</button>
+      <button class="tab" data-mode="chrono">Chronological (In-Universe)</button>
+    </div>
+    <button id="roadModeToggle" class="road-toggle" type="button" aria-pressed="false">
+      <span class="road-toggle-dot"></span> Road Mode
+    </button>
+    <div class="search">
+      <input type="text" id="searchInput" placeholder="Jump to a title…" autocomplete="off">
+      <div class="search-results" id="searchResults"></div>
+    </div>
+    <div class="search char-search">
+      <input type="text" id="charInput" placeholder="Trace a character…" autocomplete="off" aria-label="Trace a character thread">
+      <div class="search-results" id="charResults"></div>
+    </div>
+    <button id="themeToggle" class="theme-toggle" type="button" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
+  </div>
+</header>
+
+<div class="hint" id="hintBanner"><button class="hint-close" id="hintClose" aria-label="Dismiss tip">✕</button><b>Tip:</b>&nbsp;click a node to see where its story <em>leads</em> — arrowed arcs point one-way, from a title into whatever it feeds directly. Flip on <b>Road Mode</b> to instead see everything you'd need to watch first, laid out as a tree. Type a name in <b>Trace a character</b> to follow every Loki or Wanda appearance across the graph.</div>
+<div class="thread-banner" id="threadBanner" role="status">
+  <span class="thread-swatch" id="threadSwatch"></span>
+  <span class="thread-label" id="threadLabel"></span>
+  <span class="thread-meta" id="threadMeta"></span>
+  <button class="thread-clear" id="threadClear" type="button">Clear thread</button>
+</div>
+<section class="progress-panel" id="progressPanel" aria-label="MCU watch progress">
+  <div class="progress-head">
+    <div class="progress-ring-wrap" aria-hidden="true">
+      <svg class="progress-ring" viewBox="0 0 72 72">
+        <circle class="progress-ring-track" cx="36" cy="36" r="30"></circle>
+        <circle class="progress-ring-fill" id="progressRingFill" cx="36" cy="36" r="30"></circle>
+      </svg>
+      <div class="progress-ring-label"><b id="progressPct">0</b><span>%</span></div>
+    </div>
+    <div class="progress-copy">
+      <div class="progress-kicker">Progress</div>
+      <div class="progress-count"><b id="progressCount">0</b> / <span id="progressTotal">0</span> titles watched</div>
+      <div class="progress-sub" id="progressSub">0% of the catalog</div>
+    </div>
+    <button class="progress-breakdown-toggle" id="progressBreakdownToggle" type="button" aria-expanded="false">Breakdown ▾</button>
+    <button class="progress-reset" id="progressReset" type="button">reset</button>
+  </div>
+  <div class="progress-phases" id="progressPhases" role="list"></div>
+</section>
+
+<div id="loadState">
+  <div class="load-card" id="loadCard">
+    <div class="load-spinner"></div>
+    <div class="load-text">Loading timeline data…</div>
+  </div>
+</div>
+
+<div id="minimapWrap">
+  <div id="phaseJumpRow"></div>
+  <div id="minimap" role="slider" aria-label="Timeline scrubber" tabindex="0">
+    <div id="minimapTrack"></div>
+    <div id="minimapViewport"></div>
+  </div>
+</div>
+
+<div id="stage">
+  <div id="track-wrap">
+    <svg id="links"></svg>
+    <div id="track"></div>
+  </div>
+</div>
+
+<footer>Curated fan reference, current as of Aug 2026 · Chronological placement is approximate for branching timelines (Loki, What If…?, Eyes of Wakanda, Marvel Zombies, alternate-universe entries) · Not an official Marvel Studios product</footer>
+
+<div id="overlay"></div>
+<div id="detail">
+  <button class="close" id="closeDetail">✕</button>
+  <div id="detailBody"></div>
+</div>
+
+<div id="roadOverlay"></div>
+<div id="roadModal" role="dialog" aria-modal="true" aria-label="Watch path">
+  <div class="road-card">
+    <div class="road-card-head">
+      <button class="road-back" id="roadBack" style="display:none;">← Back</button>
+      <button class="road-close" id="roadClose">✕</button>
+    </div>
+    <div id="roadBody"></div>
+  </div>
+</div>
+
+<div id="trailerOverlay"></div>
+<div id="trailerModal" role="dialog" aria-modal="true" aria-label="Trailer">
+  <div class="trailer-card">
+    <div class="trailer-card-head">
+      <span id="trailerTitle"></span>
+      <button class="road-close" id="trailerClose">✕</button>
+    </div>
+    <div id="trailerBody"></div>
+  </div>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>

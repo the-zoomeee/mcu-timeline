@@ -1,0 +1,2681 @@
+{
+  "phaseNames": {
+    "1": "Phase One",
+    "2": "Phase Two",
+    "3": "Phase Three",
+    "4": "Phase Four",
+    "5": "Phase Five",
+    "6": "Phase Six"
+  },
+  "phaseColors": {
+    "1": "#d64550",
+    "2": "#3f7cd6",
+    "3": "#9a5bd6",
+    "4": "#e8a33d",
+    "5": "#2fa88c",
+    "6": "#e0574a"
+  },
+  "items": [
+    {
+      "id": "iron-man",
+      "title": "Iron Man",
+      "year": 2008,
+      "type": "movie",
+      "phase": 1,
+      "blurb": "Tony Stark builds a suit of armor to escape captivity, then keeps building them. The film that started the shared universe experiment.",
+      "trailer": "6_KN6Y4nI8w",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "hulk",
+      "title": "The Incredible Hulk",
+      "year": 2008,
+      "type": "movie",
+      "phase": 1,
+      "blurb": "Bruce Banner runs from General Ross while searching for a cure. Loosely tied to the wider universe via a Stark cameo.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "iron-man-2",
+      "title": "Iron Man 2",
+      "year": 2010,
+      "type": "movie",
+      "phase": 1,
+      "blurb": "Stark faces palladium poisoning and a vengeful rival while S.H.I.E.L.D. quietly recruits him for something bigger.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "thor",
+      "title": "Thor",
+      "year": 2011,
+      "type": "movie",
+      "phase": 1,
+      "blurb": "Banished to Earth, Thor learns humility while Loki seizes the throne of Asgard.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "cap-1",
+      "title": "Captain America: The First Avenger",
+      "year": 2011,
+      "type": "movie",
+      "phase": 1,
+      "blurb": "Steve Rogers becomes a super-soldier and fights Hydra in WWII, ending frozen in ice for seventy years.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "avengers-1",
+      "title": "The Avengers",
+      "year": 2012,
+      "type": "movie",
+      "phase": 1,
+      "blurb": "Loki invades New York with a Chitauri army; Earth's Mightiest Heroes assemble for the first time.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "iron-man-3",
+      "title": "Iron Man 3",
+      "year": 2013,
+      "type": "movie",
+      "phase": 2,
+      "blurb": "Stark grapples with PTSD after New York while facing the Mandarin — and the Extremis program.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "thor-2",
+      "title": "Thor: The Dark World",
+      "year": 2013,
+      "type": "movie",
+      "phase": 2,
+      "blurb": "The Aether resurfaces, and Thor must team with Loki to stop the Dark Elf Malekith.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "cap-2",
+      "title": "Captain America: The Winter Soldier",
+      "year": 2014,
+      "type": "movie",
+      "phase": 2,
+      "blurb": "Hydra's decades-long infiltration of S.H.I.E.L.D. is exposed; Bucky Barnes resurfaces as a brainwashed assassin.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "gotg-1",
+      "title": "Guardians of the Galaxy",
+      "year": 2014,
+      "type": "movie",
+      "phase": 2,
+      "blurb": "A ragtag crew of misfits clashes over an Infinity Stone on the far side of the galaxy.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "avengers-2",
+      "title": "Avengers: Age of Ultron",
+      "year": 2015,
+      "type": "movie",
+      "phase": 2,
+      "blurb": "Stark's AI peacekeeping program goes catastrophically wrong, birthing Ultron and, eventually, Vision.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "ant-man-1",
+      "title": "Ant-Man",
+      "year": 2015,
+      "type": "movie",
+      "phase": 2,
+      "blurb": "Scott Lang inherits the Pym Particle suit and pulls off a heist that shrinks him to subatomic scale.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "cap-3",
+      "title": "Captain America: Civil War",
+      "year": 2016,
+      "type": "movie",
+      "phase": 3,
+      "blurb": "The Sokovia Accords split the Avengers into two camps, fracturing the team for years.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "doc-strange-1",
+      "title": "Doctor Strange",
+      "year": 2016,
+      "type": "movie",
+      "phase": 3,
+      "blurb": "Surgeon Stephen Strange masters the mystic arts and confronts a threat from the Dark Dimension.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "gotg-2",
+      "title": "Guardians of the Galaxy Vol. 2",
+      "year": 2017,
+      "type": "movie",
+      "phase": 3,
+      "blurb": "Star-Lord meets his celestial father Ego, forcing the Guardians to redefine what family means.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "spiderman-homecoming",
+      "title": "Spider-Man: Homecoming",
+      "year": 2017,
+      "type": "movie",
+      "phase": 3,
+      "blurb": "Peter Parker balances high school with Avengers ambitions while the Vulture arms-deals alien tech.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "thor-3",
+      "title": "Thor: Ragnarok",
+      "year": 2017,
+      "type": "movie",
+      "phase": 3,
+      "blurb": "Asgard's destruction is prophesied as Hela, goddess of death, returns to claim the throne.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "black-panther-1",
+      "title": "Black Panther",
+      "year": 2018,
+      "type": "movie",
+      "phase": 3,
+      "blurb": "T'Challa assumes Wakanda's throne and must decide the isolationist nation's place in the world.",
+      "trailer": "xjDjIWPwcPU",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "infinity-war",
+      "title": "Avengers: Infinity War",
+      "year": 2018,
+      "type": "movie",
+      "phase": 3,
+      "blurb": "Thanos hunts all six Infinity Stones. Half of all life in the universe turns to dust.",
+      "trailer": "6ZfuNTqbHE8",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "ant-man-2",
+      "title": "Ant-Man and the Wasp",
+      "year": 2018,
+      "type": "movie",
+      "phase": 3,
+      "blurb": "Scott Lang and Hope van Dyne race to rescue Janet from the Quantum Realm — right before the Blip.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "captain-marvel",
+      "title": "Captain Marvel",
+      "year": 2019,
+      "type": "movie",
+      "phase": 3,
+      "blurb": "Set in 1995: Carol Danvers uncovers her past amid the Kree-Skrull war and pages a certain someone.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "endgame",
+      "title": "Avengers: Endgame",
+      "year": 2019,
+      "type": "movie",
+      "phase": 3,
+      "blurb": "The survivors execute a time heist to undo the Snap, closing out the Infinity Saga.",
+      "trailer": "TcMBFSGVi1c",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "far-from-home",
+      "title": "Spider-Man: Far From Home",
+      "year": 2019,
+      "type": "movie",
+      "phase": 3,
+      "blurb": "Peter navigates a post-Blip world and a manipulative hero named Mysterio while on a school trip.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "wandavision",
+      "title": "WandaVision",
+      "year": 2021,
+      "type": "series",
+      "phase": 4,
+      "blurb": "Wanda Maximoff grieves Vision inside a sitcom-shaped reality bubble of her own making.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "falcon-winter-soldier",
+      "title": "The Falcon and the Winter Soldier",
+      "year": 2021,
+      "type": "series",
+      "phase": 4,
+      "blurb": "Sam Wilson and Bucky Barnes confront the Flag Smashers and the legacy of the Captain America mantle.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "loki-s1",
+      "title": "Loki (Season 1)",
+      "year": 2021,
+      "type": "series",
+      "phase": 4,
+      "branch": true,
+      "blurb": "A variant Loki is arrested by the Time Variance Authority, unraveling the truth of the Sacred Timeline.",
+      "trailer": "",
+      "upcoming": false
+    },
+    {
+      "id": "black-widow",
+      "title": "Black Widow",
+      "year": 2021,
+      "type": "movie",
+      "phase": 4,
+      "blurb": "Set shortly after Civil War: Natasha Romanoff confronts her Red Room past and a surrogate family of spies.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "what-if-s1",
+      "title": "What If…? (Season 1)",
+      "year": 2021,
+      "type": "series",
+      "phase": 4,
+      "branch": true,
+      "blurb": "The Watcher observes key MCU moments splintering into alternate realities across the multiverse.",
+      "trailer": "",
+      "upcoming": false
+    },
+    {
+      "id": "shang-chi",
+      "title": "Shang-Chi and the Legend of the Ten Rings",
+      "year": 2021,
+      "type": "movie",
+      "phase": 4,
+      "blurb": "Shang-Chi confronts his father Xu Wenwu, wielder of the reality-warping Ten Rings.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "eternals",
+      "title": "Eternals",
+      "year": 2021,
+      "type": "movie",
+      "phase": 4,
+      "blurb": "Immortal beings sent by the Celestials to protect Earth resurface after millennia in hiding.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "hawkeye",
+      "title": "Hawkeye",
+      "year": 2021,
+      "type": "series",
+      "phase": 4,
+      "blurb": "Clint Barton trains protégé Kate Bishop while a Ronin-related conspiracy resurfaces at Christmas.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "no-way-home",
+      "title": "Spider-Man: No Way Home",
+      "year": 2021,
+      "type": "movie",
+      "phase": 4,
+      "blurb": "A spell gone wrong pulls villains — and heroes — across the multiverse into Peter's world.",
+      "trailer": "JfVOs4VSpmA",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "moon-knight",
+      "title": "Moon Knight",
+      "year": 2022,
+      "type": "series",
+      "phase": 4,
+      "blurb": "Marc Spector discovers he shares a body — and an Egyptian god — with another personality entirely.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "doc-strange-2",
+      "title": "Doctor Strange in the Multiverse of Madness",
+      "year": 2022,
+      "type": "movie",
+      "phase": 4,
+      "blurb": "Strange and America Chavez multiverse-hop while a corrupted Wanda hunts them as the Scarlet Witch.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "ms-marvel",
+      "title": "Ms. Marvel",
+      "year": 2022,
+      "type": "series",
+      "phase": 4,
+      "blurb": "Kamala Khan discovers a bangle that grants her cosmic-tinged powers — and a bloodline secret.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "thor-4",
+      "title": "Thor: Love and Thunder",
+      "year": 2022,
+      "type": "movie",
+      "phase": 4,
+      "blurb": "Gorr the God Butcher hunts deities across the cosmos as Jane Foster wields Mjolnir once more.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "she-hulk",
+      "title": "She-Hulk: Attorney at Law",
+      "year": 2022,
+      "type": "series",
+      "phase": 4,
+      "blurb": "Jennifer Walters juggles superhero law and Hulk-sized side effects of an emergency blood transfusion.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "werewolf-night",
+      "title": "Werewolf by Night",
+      "year": 2022,
+      "type": "special",
+      "phase": 4,
+      "blurb": "A black-and-white monster-hunter special introducing Elsa Bloodstone and Man-Thing to the MCU.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "wakanda-forever",
+      "title": "Black Panther: Wakanda Forever",
+      "year": 2022,
+      "type": "movie",
+      "phase": 4,
+      "blurb": "Wakanda mourns T'Challa while Namor's underwater nation of Talokan declares war.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "gotg-holiday",
+      "title": "Guardians of the Galaxy Holiday Special",
+      "year": 2022,
+      "type": "special",
+      "phase": 4,
+      "blurb": "The Guardians attempt to give Peter Quill the perfect Earth Christmas.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "quantumania",
+      "title": "Ant-Man and the Wasp: Quantumania",
+      "year": 2023,
+      "type": "movie",
+      "phase": 5,
+      "blurb": "The Langs and Pyms are pulled into the Quantum Realm and face its ruler: Kang the Conqueror.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "gotg-3",
+      "title": "Guardians of the Galaxy Vol. 3",
+      "year": 2023,
+      "type": "movie",
+      "phase": 5,
+      "blurb": "The Guardians go to war with the High Evolutionary to save Rocket's life — and end their trilogy.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "secret-invasion",
+      "title": "Secret Invasion",
+      "year": 2023,
+      "type": "series",
+      "phase": 5,
+      "blurb": "Nick Fury uncovers a decades-long Skrull infiltration of Earth's institutions.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "loki-s2",
+      "title": "Loki (Season 2)",
+      "year": 2023,
+      "type": "series",
+      "phase": 5,
+      "branch": true,
+      "blurb": "Loki fights to save the TVA and the Sacred Timeline itself as it fractures at the loom.",
+      "trailer": "",
+      "upcoming": false
+    },
+    {
+      "id": "the-marvels",
+      "title": "The Marvels",
+      "year": 2023,
+      "type": "movie",
+      "phase": 5,
+      "blurb": "Carol Danvers, Kamala Khan, and Monica Rambeau have their powers entangled and must team up.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "echo",
+      "title": "Echo",
+      "year": 2024,
+      "type": "series",
+      "phase": 5,
+      "blurb": "Maya Lopez returns home to Oklahoma and confronts Kingpin's reach — and her own heritage.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "deadpool-wolverine",
+      "title": "Deadpool & Wolverine",
+      "year": 2024,
+      "type": "movie",
+      "phase": 5,
+      "branch": true,
+      "blurb": "Deadpool recruits a variant Wolverine to save his universe from erasure by the TVA.",
+      "trailer": "73_1biulkYk",
+      "upcoming": false
+    },
+    {
+      "id": "agatha",
+      "title": "Agatha All Along",
+      "year": 2024,
+      "type": "series",
+      "phase": 5,
+      "blurb": "Agatha Harkness assembles a coven to walk the deadly Witches' Road and reclaim her power.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "what-if-s2",
+      "title": "What If…? (Season 2)",
+      "year": 2024,
+      "type": "series",
+      "phase": 5,
+      "branch": true,
+      "blurb": "More divergent timelines, including a Wakandan Doctor Strange and Peggy Carter's super-soldier serum.",
+      "trailer": "",
+      "upcoming": false
+    },
+    {
+      "id": "cap-4",
+      "title": "Captain America: Brave New World",
+      "year": 2025,
+      "type": "movie",
+      "phase": 5,
+      "blurb": "Sam Wilson's new Captain America confronts a geopolitical crisis tied to adamantium and a Hulk-like Red Hulk.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "daredevil-born-again-s1",
+      "title": "Daredevil: Born Again (Season 1)",
+      "year": 2025,
+      "type": "series",
+      "phase": 5,
+      "blurb": "Matt Murdock returns to the mask as Wilson Fisk becomes Mayor of New York.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "thunderbolts",
+      "title": "Thunderbolts*",
+      "year": 2025,
+      "type": "movie",
+      "phase": 5,
+      "blurb": "A team of morally grey operatives is forced together and stumbles into a fight bigger than any of them.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "ironheart",
+      "title": "Ironheart",
+      "year": 2025,
+      "type": "series",
+      "phase": 5,
+      "blurb": "Riri Williams builds her own armor and gets pulled toward the sorcerer known as the Hood.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "eyes-wakanda",
+      "title": "Eyes of Wakanda",
+      "year": 2025,
+      "type": "series",
+      "phase": 6,
+      "branch": true,
+      "blurb": "An animated anthology tracing Wakandan warriors across centuries, from 1260 BCE onward.",
+      "trailer": "",
+      "upcoming": false
+    },
+    {
+      "id": "fantastic-four",
+      "title": "The Fantastic Four: First Steps",
+      "year": 2025,
+      "type": "movie",
+      "phase": 6,
+      "branch": true,
+      "blurb": "Set on a retro-futuristic alternate Earth: the First Family faces Galactus and the Silver Surfer.",
+      "trailer": "",
+      "upcoming": false
+    },
+    {
+      "id": "wonder-man",
+      "title": "Wonder Man",
+      "year": 2025,
+      "type": "series",
+      "phase": 6,
+      "blurb": "Stuntman Simon Williams gets a shot at superhero stardom — with strings attached.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "marvel-zombies",
+      "title": "Marvel Zombies",
+      "year": 2025,
+      "type": "series",
+      "phase": 6,
+      "branch": true,
+      "blurb": "An animated horror spin-off exploring a zombie-outbreak variant of the What If…? multiverse.",
+      "trailer": "",
+      "upcoming": false
+    },
+    {
+      "id": "what-if-s3",
+      "title": "What If…? (Season 3)",
+      "year": 2026,
+      "type": "series",
+      "phase": 6,
+      "branch": true,
+      "blurb": "The Watcher's anthology continues, spinning further divergent threads ahead of the Multiverse Saga's climax.",
+      "trailer": "",
+      "upcoming": false
+    },
+    {
+      "id": "daredevil-born-again-s2",
+      "title": "Daredevil: Born Again (Season 2)",
+      "year": 2026,
+      "type": "series",
+      "phase": 6,
+      "blurb": "Matt Murdock's war with Fisk escalates as New York's underworld reshuffles.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "punisher-one-last-kill",
+      "title": "The Punisher: One Last Kill",
+      "year": 2026,
+      "type": "series",
+      "phase": 6,
+      "blurb": "Frank Castle is pulled back into New York's crime war alongside Daredevil's orbit.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "spiderman-brand-new-day",
+      "title": "Spider-Man: Brand New Day",
+      "year": 2026,
+      "type": "movie",
+      "phase": 6,
+      "blurb": "Peter Parker navigates a rebuilt life and reputation ahead of Earth's next great convergence.",
+      "trailer": "",
+      "branch": false,
+      "upcoming": false
+    },
+    {
+      "id": "avengers-doomsday",
+      "title": "Avengers: Doomsday",
+      "year": 2026,
+      "type": "movie",
+      "phase": 6,
+      "upcoming": true,
+      "blurb": "Heroes from across the Multiverse Saga converge to face Victor von Doom.",
+      "trailer": "",
+      "branch": false
+    },
+    {
+      "id": "avengers-secret-wars",
+      "title": "Avengers: Secret Wars",
+      "year": 2027,
+      "type": "movie",
+      "phase": 6,
+      "upcoming": true,
+      "blurb": "The culmination of the Multiverse Saga — incursion-level stakes across realities.",
+      "trailer": "",
+      "branch": false
+    }
+  ],
+  "links": {
+    "iron-man": [
+      "iron-man-2",
+      "avengers-1"
+    ],
+    "hulk": [
+      "avengers-1",
+      "iron-man-2"
+    ],
+    "iron-man-2": [
+      "iron-man-3"
+    ],
+    "thor": [
+      "avengers-1",
+      "thor-2"
+    ],
+    "cap-1": [
+      "avengers-1",
+      "cap-2"
+    ],
+    "avengers-1": [
+      "iron-man-3",
+      "thor-2",
+      "cap-2",
+      "avengers-2"
+    ],
+    "thor-2": [
+      "thor-3"
+    ],
+    "cap-2": [
+      "falcon-winter-soldier",
+      "cap-3"
+    ],
+    "gotg-1": [
+      "gotg-2"
+    ],
+    "avengers-2": [
+      "cap-3",
+      "ant-man-1",
+      "she-hulk"
+    ],
+    "ant-man-1": [
+      "ant-man-2"
+    ],
+    "cap-3": [
+      "black-widow",
+      "black-panther-1",
+      "spiderman-homecoming",
+      "cap-4"
+    ],
+    "doc-strange-1": [
+      "doc-strange-2",
+      "infinity-war"
+    ],
+    "gotg-2": [
+      "gotg-3",
+      "infinity-war",
+      "gotg-holiday"
+    ],
+    "spiderman-homecoming": [
+      "far-from-home"
+    ],
+    "thor-3": [
+      "infinity-war"
+    ],
+    "black-panther-1": [
+      "wakanda-forever",
+      "infinity-war"
+    ],
+    "infinity-war": [
+      "endgame"
+    ],
+    "ant-man-2": [
+      "endgame",
+      "quantumania"
+    ],
+    "captain-marvel": [
+      "endgame",
+      "the-marvels"
+    ],
+    "endgame": [
+      "far-from-home",
+      "loki-s1",
+      "falcon-winter-soldier",
+      "hawkeye",
+      "wandavision",
+      "thunderbolts"
+    ],
+    "far-from-home": [
+      "no-way-home"
+    ],
+    "wandavision": [
+      "doc-strange-2",
+      "agatha"
+    ],
+    "loki-s1": [
+      "loki-s2"
+    ],
+    "black-widow": [
+      "thunderbolts"
+    ],
+    "what-if-s1": [
+      "what-if-s2",
+      "marvel-zombies"
+    ],
+    "shang-chi": [
+      "avengers-doomsday"
+    ],
+    "eternals": [
+      "avengers-doomsday"
+    ],
+    "hawkeye": [
+      "echo"
+    ],
+    "no-way-home": [
+      "spiderman-brand-new-day"
+    ],
+    "doc-strange-2": [
+      "loki-s2",
+      "deadpool-wolverine"
+    ],
+    "ms-marvel": [
+      "the-marvels"
+    ],
+    "wakanda-forever": [
+      "eyes-wakanda"
+    ],
+    "gotg-3": [
+      "gotg-holiday"
+    ],
+    "quantumania": [
+      "secret-invasion"
+    ],
+    "secret-invasion": [
+      "cap-4"
+    ],
+    "loki-s2": [
+      "avengers-doomsday"
+    ],
+    "echo": [
+      "daredevil-born-again-s1"
+    ],
+    "deadpool-wolverine": [
+      "what-if-s2",
+      "avengers-doomsday"
+    ],
+    "what-if-s2": [
+      "what-if-s3"
+    ],
+    "cap-4": [
+      "thunderbolts",
+      "avengers-doomsday"
+    ],
+    "daredevil-born-again-s1": [
+      "daredevil-born-again-s2",
+      "punisher-one-last-kill"
+    ],
+    "thunderbolts": [
+      "avengers-doomsday"
+    ],
+    "ironheart": [
+      "deadpool-wolverine",
+      "avengers-doomsday"
+    ],
+    "fantastic-four": [
+      "avengers-doomsday"
+    ],
+    "daredevil-born-again-s2": [
+      "punisher-one-last-kill"
+    ],
+    "spiderman-brand-new-day": [
+      "avengers-doomsday"
+    ],
+    "avengers-doomsday": [
+      "avengers-secret-wars"
+    ]
+  },
+  "releaseOrder": [
+    "iron-man",
+    "hulk",
+    "iron-man-2",
+    "thor",
+    "cap-1",
+    "avengers-1",
+    "iron-man-3",
+    "thor-2",
+    "cap-2",
+    "gotg-1",
+    "avengers-2",
+    "ant-man-1",
+    "cap-3",
+    "doc-strange-1",
+    "gotg-2",
+    "spiderman-homecoming",
+    "thor-3",
+    "black-panther-1",
+    "infinity-war",
+    "ant-man-2",
+    "captain-marvel",
+    "endgame",
+    "far-from-home",
+    "wandavision",
+    "falcon-winter-soldier",
+    "loki-s1",
+    "black-widow",
+    "what-if-s1",
+    "shang-chi",
+    "eternals",
+    "hawkeye",
+    "no-way-home",
+    "moon-knight",
+    "doc-strange-2",
+    "ms-marvel",
+    "thor-4",
+    "she-hulk",
+    "werewolf-night",
+    "wakanda-forever",
+    "gotg-holiday",
+    "quantumania",
+    "gotg-3",
+    "secret-invasion",
+    "loki-s2",
+    "the-marvels",
+    "echo",
+    "deadpool-wolverine",
+    "agatha",
+    "what-if-s2",
+    "cap-4",
+    "daredevil-born-again-s1",
+    "thunderbolts",
+    "ironheart",
+    "fantastic-four",
+    "eyes-wakanda",
+    "wonder-man",
+    "marvel-zombies",
+    "what-if-s3",
+    "daredevil-born-again-s2",
+    "punisher-one-last-kill",
+    "spiderman-brand-new-day",
+    "avengers-doomsday",
+    "avengers-secret-wars"
+  ],
+  "chronoOrder": [
+    "eyes-wakanda",
+    "cap-1",
+    "captain-marvel",
+    "iron-man",
+    "iron-man-2",
+    "hulk",
+    "thor",
+    "avengers-1",
+    "iron-man-3",
+    "thor-2",
+    "cap-2",
+    "gotg-1",
+    "gotg-2",
+    "avengers-2",
+    "ant-man-1",
+    "cap-3",
+    "black-widow",
+    "black-panther-1",
+    "spiderman-homecoming",
+    "doc-strange-1",
+    "thor-3",
+    "infinity-war",
+    "ant-man-2",
+    "endgame",
+    "far-from-home",
+    "no-way-home",
+    "shang-chi",
+    "eternals",
+    "hawkeye",
+    "moon-knight",
+    "ms-marvel",
+    "wandavision",
+    "falcon-winter-soldier",
+    "loki-s1",
+    "what-if-s1",
+    "she-hulk",
+    "werewolf-night",
+    "the-marvels",
+    "gotg-holiday",
+    "doc-strange-2",
+    "thor-4",
+    "wakanda-forever",
+    "quantumania",
+    "secret-invasion",
+    "gotg-3",
+    "loki-s2",
+    "echo",
+    "agatha",
+    "daredevil-born-again-s1",
+    "cap-4",
+    "thunderbolts",
+    "ironheart",
+    "deadpool-wolverine",
+    "what-if-s2",
+    "fantastic-four",
+    "wonder-man",
+    "marvel-zombies",
+    "what-if-s3",
+    "daredevil-born-again-s2",
+    "punisher-one-last-kill",
+    "spiderman-brand-new-day",
+    "avengers-doomsday",
+    "avengers-secret-wars"
+  ],
+  "runtime": {
+    "iron-man": {
+      "min": 126
+    },
+    "hulk": {
+      "min": 112
+    },
+    "iron-man-2": {
+      "min": 124
+    },
+    "thor": {
+      "min": 115
+    },
+    "cap-1": {
+      "min": 124
+    },
+    "avengers-1": {
+      "min": 143
+    },
+    "iron-man-3": {
+      "min": 130
+    },
+    "thor-2": {
+      "min": 112
+    },
+    "cap-2": {
+      "min": 136
+    },
+    "gotg-1": {
+      "min": 121
+    },
+    "avengers-2": {
+      "min": 141
+    },
+    "ant-man-1": {
+      "min": 117
+    },
+    "cap-3": {
+      "min": 147
+    },
+    "doc-strange-1": {
+      "min": 115
+    },
+    "gotg-2": {
+      "min": 137
+    },
+    "spiderman-homecoming": {
+      "min": 133
+    },
+    "thor-3": {
+      "min": 130
+    },
+    "black-panther-1": {
+      "min": 134
+    },
+    "infinity-war": {
+      "min": 149
+    },
+    "ant-man-2": {
+      "min": 118
+    },
+    "captain-marvel": {
+      "min": 124
+    },
+    "endgame": {
+      "min": 181
+    },
+    "far-from-home": {
+      "min": 129
+    },
+    "wandavision": {
+      "ep": 9
+    },
+    "falcon-winter-soldier": {
+      "ep": 6
+    },
+    "loki-s1": {
+      "ep": 6
+    },
+    "what-if-s1": {
+      "ep": 9
+    },
+    "hawkeye": {
+      "ep": 6
+    },
+    "black-widow": {
+      "min": 134
+    },
+    "shang-chi": {
+      "min": 132
+    },
+    "eternals": {
+      "min": 157
+    },
+    "moon-knight": {
+      "ep": 6
+    },
+    "doc-strange-2": {
+      "min": 126
+    },
+    "ms-marvel": {
+      "ep": 6
+    },
+    "thor-4": {
+      "min": 119
+    },
+    "she-hulk": {
+      "ep": 9
+    },
+    "werewolf-night": {
+      "min": 53
+    },
+    "wakanda-forever": {
+      "min": 161
+    },
+    "gotg-holiday": {
+      "min": 44
+    },
+    "quantumania": {
+      "min": 125
+    },
+    "gotg-3": {
+      "min": 150
+    },
+    "secret-invasion": {
+      "ep": 6
+    },
+    "loki-s2": {
+      "ep": 6
+    },
+    "the-marvels": {
+      "min": 105
+    },
+    "echo": {
+      "ep": 5
+    },
+    "deadpool-wolverine": {
+      "min": 128
+    },
+    "agatha": {
+      "ep": 9
+    },
+    "what-if-s2": {
+      "ep": 9
+    },
+    "cap-4": {
+      "min": 118
+    },
+    "daredevil-born-again-s1": {
+      "ep": 9
+    },
+    "thunderbolts": {
+      "min": 127
+    },
+    "ironheart": {
+      "ep": 6
+    },
+    "eyes-wakanda": {
+      "ep": 4
+    },
+    "fantastic-four": {
+      "min": 130
+    },
+    "wonder-man": {
+      "ep": 8
+    },
+    "marvel-zombies": {
+      "ep": 4
+    },
+    "what-if-s3": {
+      "ep": 8
+    },
+    "daredevil-born-again-s2": {
+      "ep": 8
+    },
+    "no-way-home": {
+      "min": 148
+    }
+  },
+  "whereUpcoming": {
+    "avengers-doomsday": "Theaters — Dec 2026",
+    "avengers-secret-wars": "Theaters — Dec 2027"
+  },
+  "languages": {
+    "standard": [
+      "English",
+      "Hindi",
+      "Tamil",
+      "Telugu"
+    ],
+    "overrides": {
+      "avengers-doomsday": [
+        "English"
+      ],
+      "avengers-secret-wars": [
+        "English"
+      ],
+      "eyes-wakanda": [
+        "English",
+        "Hindi"
+      ],
+      "marvel-zombies": [
+        "English",
+        "Hindi"
+      ],
+      "wonder-man": [
+        "English",
+        "Hindi"
+      ]
+    }
+  },
+  "cast": {
+    "iron-man": [
+      [
+        "Robert Downey Jr.",
+        "Tony Stark / Iron Man"
+      ],
+      [
+        "Gwyneth Paltrow",
+        "Pepper Potts"
+      ],
+      [
+        "Terrence Howard",
+        "James Rhodes"
+      ],
+      [
+        "Jeff Bridges",
+        "Obadiah Stane"
+      ]
+    ],
+    "hulk": [
+      [
+        "Edward Norton",
+        "Bruce Banner / Hulk"
+      ],
+      [
+        "Liv Tyler",
+        "Betty Ross"
+      ],
+      [
+        "Tim Roth",
+        "Emil Blonsky"
+      ]
+    ],
+    "iron-man-2": [
+      [
+        "Robert Downey Jr.",
+        "Tony Stark"
+      ],
+      [
+        "Gwyneth Paltrow",
+        "Pepper Potts"
+      ],
+      [
+        "Scarlett Johansson",
+        "Natasha Romanoff"
+      ],
+      [
+        "Mickey Rourke",
+        "Ivan Vanko"
+      ]
+    ],
+    "thor": [
+      [
+        "Chris Hemsworth",
+        "Thor"
+      ],
+      [
+        "Natalie Portman",
+        "Jane Foster"
+      ],
+      [
+        "Tom Hiddleston",
+        "Loki"
+      ],
+      [
+        "Anthony Hopkins",
+        "Odin"
+      ]
+    ],
+    "cap-1": [
+      [
+        "Chris Evans",
+        "Steve Rogers"
+      ],
+      [
+        "Hayley Atwell",
+        "Peggy Carter"
+      ],
+      [
+        "Sebastian Stan",
+        "Bucky Barnes"
+      ],
+      [
+        "Hugo Weaving",
+        "Red Skull"
+      ]
+    ],
+    "avengers-1": [
+      [
+        "Robert Downey Jr.",
+        "Iron Man"
+      ],
+      [
+        "Chris Evans",
+        "Captain America"
+      ],
+      [
+        "Scarlett Johansson",
+        "Black Widow"
+      ],
+      [
+        "Chris Hemsworth",
+        "Thor"
+      ],
+      [
+        "Mark Ruffalo",
+        "Hulk"
+      ]
+    ],
+    "iron-man-3": [
+      [
+        "Robert Downey Jr.",
+        "Tony Stark"
+      ],
+      [
+        "Gwyneth Paltrow",
+        "Pepper Potts"
+      ],
+      [
+        "Ben Kingsley",
+        "Trevor Slattery"
+      ],
+      [
+        "Guy Pearce",
+        "Aldrich Killian"
+      ]
+    ],
+    "thor-2": [
+      [
+        "Chris Hemsworth",
+        "Thor"
+      ],
+      [
+        "Natalie Portman",
+        "Jane Foster"
+      ],
+      [
+        "Tom Hiddleston",
+        "Loki"
+      ],
+      [
+        "Christopher Eccleston",
+        "Malekith"
+      ]
+    ],
+    "cap-2": [
+      [
+        "Chris Evans",
+        "Steve Rogers"
+      ],
+      [
+        "Scarlett Johansson",
+        "Natasha Romanoff"
+      ],
+      [
+        "Sebastian Stan",
+        "Bucky Barnes"
+      ],
+      [
+        "Anthony Mackie",
+        "Sam Wilson"
+      ]
+    ],
+    "gotg-1": [
+      [
+        "Chris Pratt",
+        "Peter Quill / Star-Lord"
+      ],
+      [
+        "Zoe Saldaña",
+        "Gamora"
+      ],
+      [
+        "Dave Bautista",
+        "Drax"
+      ],
+      [
+        "Bradley Cooper",
+        "Rocket (voice)"
+      ]
+    ],
+    "avengers-2": [
+      [
+        "Robert Downey Jr.",
+        "Tony Stark"
+      ],
+      [
+        "Chris Evans",
+        "Steve Rogers"
+      ],
+      [
+        "Elizabeth Olsen",
+        "Wanda Maximoff"
+      ],
+      [
+        "Paul Bettany",
+        "Vision"
+      ],
+      [
+        "James Spader",
+        "Ultron (voice)"
+      ]
+    ],
+    "ant-man-1": [
+      [
+        "Paul Rudd",
+        "Scott Lang"
+      ],
+      [
+        "Evangeline Lilly",
+        "Hope van Dyne"
+      ],
+      [
+        "Michael Douglas",
+        "Hank Pym"
+      ],
+      [
+        "Corey Stoll",
+        "Darren Cross"
+      ]
+    ],
+    "cap-3": [
+      [
+        "Chris Evans",
+        "Steve Rogers"
+      ],
+      [
+        "Robert Downey Jr.",
+        "Tony Stark"
+      ],
+      [
+        "Sebastian Stan",
+        "Bucky Barnes"
+      ],
+      [
+        "Chadwick Boseman",
+        "T'Challa"
+      ],
+      [
+        "Tom Holland",
+        "Peter Parker"
+      ]
+    ],
+    "doc-strange-1": [
+      [
+        "Benedict Cumberbatch",
+        "Stephen Strange"
+      ],
+      [
+        "Chiwetel Ejiofor",
+        "Mordo"
+      ],
+      [
+        "Rachel McAdams",
+        "Christine Palmer"
+      ],
+      [
+        "Tilda Swinton",
+        "Ancient One"
+      ]
+    ],
+    "gotg-2": [
+      [
+        "Chris Pratt",
+        "Star-Lord"
+      ],
+      [
+        "Zoe Saldaña",
+        "Gamora"
+      ],
+      [
+        "Dave Bautista",
+        "Drax"
+      ],
+      [
+        "Kurt Russell",
+        "Ego"
+      ],
+      [
+        "Michael Rooker",
+        "Yondu"
+      ]
+    ],
+    "spiderman-homecoming": [
+      [
+        "Tom Holland",
+        "Peter Parker"
+      ],
+      [
+        "Michael Keaton",
+        "Adrian Toomes / Vulture"
+      ],
+      [
+        "Zendaya",
+        "MJ"
+      ],
+      [
+        "Robert Downey Jr.",
+        "Tony Stark"
+      ]
+    ],
+    "thor-3": [
+      [
+        "Chris Hemsworth",
+        "Thor"
+      ],
+      [
+        "Tom Hiddleston",
+        "Loki"
+      ],
+      [
+        "Cate Blanchett",
+        "Hela"
+      ],
+      [
+        "Tessa Thompson",
+        "Valkyrie"
+      ],
+      [
+        "Mark Ruffalo",
+        "Hulk"
+      ]
+    ],
+    "black-panther-1": [
+      [
+        "Chadwick Boseman",
+        "T'Challa"
+      ],
+      [
+        "Michael B. Jordan",
+        "Killmonger"
+      ],
+      [
+        "Lupita Nyong'o",
+        "Nakia"
+      ],
+      [
+        "Danai Gurira",
+        "Okoye"
+      ]
+    ],
+    "infinity-war": [
+      [
+        "Robert Downey Jr.",
+        "Tony Stark"
+      ],
+      [
+        "Chris Evans",
+        "Steve Rogers"
+      ],
+      [
+        "Josh Brolin",
+        "Thanos"
+      ],
+      [
+        "Chris Hemsworth",
+        "Thor"
+      ]
+    ],
+    "ant-man-2": [
+      [
+        "Paul Rudd",
+        "Scott Lang"
+      ],
+      [
+        "Evangeline Lilly",
+        "Hope van Dyne"
+      ],
+      [
+        "Michael Douglas",
+        "Hank Pym"
+      ],
+      [
+        "Michelle Pfeiffer",
+        "Janet van Dyne"
+      ]
+    ],
+    "captain-marvel": [
+      [
+        "Brie Larson",
+        "Carol Danvers"
+      ],
+      [
+        "Samuel L. Jackson",
+        "Nick Fury"
+      ],
+      [
+        "Ben Mendelsohn",
+        "Talos"
+      ],
+      [
+        "Jude Law",
+        "Yon-Rogg"
+      ]
+    ],
+    "endgame": [
+      [
+        "Robert Downey Jr.",
+        "Tony Stark"
+      ],
+      [
+        "Chris Evans",
+        "Steve Rogers"
+      ],
+      [
+        "Chris Hemsworth",
+        "Thor"
+      ],
+      [
+        "Scarlett Johansson",
+        "Natasha Romanoff"
+      ]
+    ],
+    "far-from-home": [
+      [
+        "Tom Holland",
+        "Peter Parker"
+      ],
+      [
+        "Jake Gyllenhaal",
+        "Mysterio"
+      ],
+      [
+        "Zendaya",
+        "MJ"
+      ],
+      [
+        "Samuel L. Jackson",
+        "Nick Fury"
+      ]
+    ],
+    "wandavision": [
+      [
+        "Elizabeth Olsen",
+        "Wanda Maximoff"
+      ],
+      [
+        "Paul Bettany",
+        "Vision"
+      ],
+      [
+        "Kathryn Hahn",
+        "Agnes / Agatha"
+      ],
+      [
+        "Teyonah Parris",
+        "Monica Rambeau"
+      ]
+    ],
+    "falcon-winter-soldier": [
+      [
+        "Anthony Mackie",
+        "Sam Wilson"
+      ],
+      [
+        "Sebastian Stan",
+        "Bucky Barnes"
+      ],
+      [
+        "Wyatt Russell",
+        "John Walker"
+      ],
+      [
+        "Daniel Brühl",
+        "Zemo"
+      ]
+    ],
+    "loki-s1": [
+      [
+        "Tom Hiddleston",
+        "Loki"
+      ],
+      [
+        "Owen Wilson",
+        "Mobius"
+      ],
+      [
+        "Sophia Di Martino",
+        "Sylvie"
+      ],
+      [
+        "Gugu Mbatha-Raw",
+        "Ravonna Renslayer"
+      ]
+    ],
+    "black-widow": [
+      [
+        "Scarlett Johansson",
+        "Natasha Romanoff"
+      ],
+      [
+        "Florence Pugh",
+        "Yelena Belova"
+      ],
+      [
+        "David Harbour",
+        "Alexei / Red Guardian"
+      ],
+      [
+        "Rachel Weisz",
+        "Melina"
+      ]
+    ],
+    "what-if-s1": [
+      [
+        "Jeffrey Wright",
+        "The Watcher (voice)"
+      ]
+    ],
+    "shang-chi": [
+      [
+        "Simu Liu",
+        "Shang-Chi"
+      ],
+      [
+        "Awkwafina",
+        "Katy"
+      ],
+      [
+        "Tony Leung",
+        "Xu Wenwu"
+      ],
+      [
+        "Michelle Yeoh",
+        "Ying Nan"
+      ]
+    ],
+    "eternals": [
+      [
+        "Gemma Chan",
+        "Sersi"
+      ],
+      [
+        "Richard Madden",
+        "Ikaris"
+      ],
+      [
+        "Angelina Jolie",
+        "Thena"
+      ],
+      [
+        "Salma Hayek",
+        "Ajak"
+      ]
+    ],
+    "hawkeye": [
+      [
+        "Jeremy Renner",
+        "Clint Barton"
+      ],
+      [
+        "Hailee Steinfeld",
+        "Kate Bishop"
+      ],
+      [
+        "Florence Pugh",
+        "Yelena Belova"
+      ],
+      [
+        "Vera Farmiga",
+        "Eleanor Bishop"
+      ]
+    ],
+    "no-way-home": [
+      [
+        "Tom Holland",
+        "Peter Parker"
+      ],
+      [
+        "Zendaya",
+        "MJ"
+      ],
+      [
+        "Benedict Cumberbatch",
+        "Doctor Strange"
+      ],
+      [
+        "Willem Dafoe",
+        "Green Goblin"
+      ]
+    ],
+    "moon-knight": [
+      [
+        "Oscar Isaac",
+        "Marc Spector / Steven Grant"
+      ],
+      [
+        "May Calamawy",
+        "Layla"
+      ],
+      [
+        "Ethan Hawke",
+        "Arthur Harrow"
+      ]
+    ],
+    "doc-strange-2": [
+      [
+        "Benedict Cumberbatch",
+        "Doctor Strange"
+      ],
+      [
+        "Elizabeth Olsen",
+        "Wanda Maximoff"
+      ],
+      [
+        "Xochitl Gomez",
+        "America Chavez"
+      ]
+    ],
+    "ms-marvel": [
+      [
+        "Iman Vellani",
+        "Kamala Khan"
+      ],
+      [
+        "Matt Lintz",
+        "Bruno"
+      ],
+      [
+        "Yasmeen Fletcher",
+        "Nakia"
+      ]
+    ],
+    "thor-4": [
+      [
+        "Chris Hemsworth",
+        "Thor"
+      ],
+      [
+        "Natalie Portman",
+        "Jane Foster / Mighty Thor"
+      ],
+      [
+        "Christian Bale",
+        "Gorr"
+      ],
+      [
+        "Tessa Thompson",
+        "Valkyrie"
+      ]
+    ],
+    "she-hulk": [
+      [
+        "Tatiana Maslany",
+        "Jennifer Walters / She-Hulk"
+      ],
+      [
+        "Mark Ruffalo",
+        "Bruce Banner"
+      ],
+      [
+        "Tim Roth",
+        "Emil Blonsky"
+      ]
+    ],
+    "werewolf-night": [
+      [
+        "Gael García Bernal",
+        "Jack Russell"
+      ],
+      [
+        "Laura Donnelly",
+        "Elsa Bloodstone"
+      ]
+    ],
+    "wakanda-forever": [
+      [
+        "Letitia Wright",
+        "Shuri"
+      ],
+      [
+        "Lupita Nyong'o",
+        "Nakia"
+      ],
+      [
+        "Danai Gurira",
+        "Okoye"
+      ],
+      [
+        "Tenoch Huerta",
+        "Namor"
+      ]
+    ],
+    "gotg-holiday": [
+      [
+        "Chris Pratt",
+        "Star-Lord"
+      ],
+      [
+        "Dave Bautista",
+        "Drax"
+      ],
+      [
+        "Kevin Bacon",
+        "Himself"
+      ]
+    ],
+    "quantumania": [
+      [
+        "Paul Rudd",
+        "Scott Lang"
+      ],
+      [
+        "Evangeline Lilly",
+        "Hope van Dyne"
+      ],
+      [
+        "Jonathan Majors",
+        "Kang"
+      ],
+      [
+        "Kathryn Newton",
+        "Cassie Lang"
+      ]
+    ],
+    "gotg-3": [
+      [
+        "Chris Pratt",
+        "Star-Lord"
+      ],
+      [
+        "Zoe Saldaña",
+        "Gamora"
+      ],
+      [
+        "Bradley Cooper",
+        "Rocket (voice)"
+      ],
+      [
+        "Chukwudi Iwuji",
+        "High Evolutionary"
+      ]
+    ],
+    "secret-invasion": [
+      [
+        "Samuel L. Jackson",
+        "Nick Fury"
+      ],
+      [
+        "Ben Mendelsohn",
+        "Talos"
+      ],
+      [
+        "Kingsley Ben-Adir",
+        "Gravik"
+      ],
+      [
+        "Olivia Colman",
+        "Sonya Falsworth"
+      ]
+    ],
+    "loki-s2": [
+      [
+        "Tom Hiddleston",
+        "Loki"
+      ],
+      [
+        "Owen Wilson",
+        "Mobius"
+      ],
+      [
+        "Sophia Di Martino",
+        "Sylvie"
+      ],
+      [
+        "Jonathan Majors",
+        "Victor Timely"
+      ]
+    ],
+    "the-marvels": [
+      [
+        "Brie Larson",
+        "Carol Danvers"
+      ],
+      [
+        "Teyonah Parris",
+        "Monica Rambeau"
+      ],
+      [
+        "Iman Vellani",
+        "Kamala Khan"
+      ]
+    ],
+    "echo": [
+      [
+        "Alaqua Cox",
+        "Maya Lopez / Echo"
+      ],
+      [
+        "Vincent D'Onofrio",
+        "Wilson Fisk"
+      ],
+      [
+        "Devery Jacobs",
+        "Bonnie"
+      ]
+    ],
+    "deadpool-wolverine": [
+      [
+        "Ryan Reynolds",
+        "Wade Wilson / Deadpool"
+      ],
+      [
+        "Hugh Jackman",
+        "Logan / Wolverine"
+      ],
+      [
+        "Emma Corrin",
+        "Cassandra Nova"
+      ]
+    ],
+    "agatha": [
+      [
+        "Kathryn Hahn",
+        "Agatha Harkness"
+      ],
+      [
+        "Joe Locke",
+        "Teen (Billy Maximoff)"
+      ],
+      [
+        "Patti LuPone",
+        "Lilia Calderu"
+      ]
+    ],
+    "what-if-s2": [
+      [
+        "Jeffrey Wright",
+        "The Watcher (voice)"
+      ]
+    ],
+    "cap-4": [
+      [
+        "Anthony Mackie",
+        "Sam Wilson"
+      ],
+      [
+        "Harrison Ford",
+        "Thaddeus Ross / Red Hulk"
+      ],
+      [
+        "Danny Ramirez",
+        "Joaquin Torres"
+      ]
+    ],
+    "daredevil-born-again-s1": [
+      [
+        "Charlie Cox",
+        "Matt Murdock / Daredevil"
+      ],
+      [
+        "Vincent D'Onofrio",
+        "Wilson Fisk"
+      ],
+      [
+        "Margarita Levieva",
+        "Heather Glenn"
+      ]
+    ],
+    "thunderbolts": [
+      [
+        "Florence Pugh",
+        "Yelena Belova"
+      ],
+      [
+        "Sebastian Stan",
+        "Bucky Barnes"
+      ],
+      [
+        "David Harbour",
+        "Alexei / Red Guardian"
+      ],
+      [
+        "Julia Louis-Dreyfus",
+        "Valentina"
+      ]
+    ],
+    "ironheart": [
+      [
+        "Dominique Thorne",
+        "Riri Williams / Ironheart"
+      ],
+      [
+        "Anthony Ramos",
+        "The Hood"
+      ]
+    ],
+    "eyes-wakanda": [
+      [
+        "Voice cast",
+        "Anthology — details vary by episode"
+      ]
+    ],
+    "fantastic-four": [
+      [
+        "Pedro Pascal",
+        "Reed Richards / Mister Fantastic"
+      ],
+      [
+        "Vanessa Kirby",
+        "Sue Storm"
+      ],
+      [
+        "Joseph Quinn",
+        "Johnny Storm"
+      ],
+      [
+        "Ebon Moss-Bachrach",
+        "Ben Grimm / The Thing"
+      ]
+    ],
+    "wonder-man": [
+      [
+        "Yahya Abdul-Mateen II",
+        "Simon Williams / Wonder Man"
+      ]
+    ],
+    "marvel-zombies": [
+      [
+        "Voice cast",
+        "Alternate-universe anthology"
+      ]
+    ],
+    "what-if-s3": [
+      [
+        "Jeffrey Wright",
+        "The Watcher (voice)"
+      ]
+    ],
+    "daredevil-born-again-s2": [
+      [
+        "Charlie Cox",
+        "Matt Murdock / Daredevil"
+      ],
+      [
+        "Vincent D'Onofrio",
+        "Wilson Fisk"
+      ]
+    ],
+    "punisher-one-last-kill": [
+      [
+        "Jon Bernthal",
+        "Frank Castle / Punisher"
+      ]
+    ],
+    "spiderman-brand-new-day": [
+      [
+        "Tom Holland",
+        "Peter Parker"
+      ],
+      [
+        "Zendaya",
+        "MJ"
+      ]
+    ],
+    "avengers-doomsday": [
+      [
+        "Robert Downey Jr.",
+        "Victor von Doom"
+      ],
+      [
+        "Ensemble cast",
+        "Across the Multiverse Saga"
+      ]
+    ],
+    "avengers-secret-wars": [
+      [
+        "Ensemble cast",
+        "Full roster TBA"
+      ]
+    ]
+  },
+  "skippable": [
+    "hulk",
+    "eternals",
+    "she-hulk",
+    "secret-invasion",
+    "werewolf-night",
+    "gotg-holiday",
+    "what-if-s1",
+    "what-if-s2",
+    "what-if-s3",
+    "marvel-zombies",
+    "eyes-wakanda",
+    "agatha",
+    "black-widow"
+  ],
+  "characters": [
+    {
+      "id": "tony",
+      "name": "Tony Stark",
+      "aka": "Iron Man",
+      "color": "#e8b84a"
+    },
+    {
+      "id": "steve",
+      "name": "Steve Rogers",
+      "aka": "Captain America",
+      "color": "#3d6cb3"
+    },
+    {
+      "id": "thor",
+      "name": "Thor",
+      "aka": "God of Thunder",
+      "color": "#5eb0e0"
+    },
+    {
+      "id": "loki",
+      "name": "Loki",
+      "aka": "God of Mischief",
+      "color": "#3dba7a"
+    },
+    {
+      "id": "natasha",
+      "name": "Natasha Romanoff",
+      "aka": "Black Widow",
+      "color": "#c4453c"
+    },
+    {
+      "id": "bruce",
+      "name": "Bruce Banner",
+      "aka": "Hulk",
+      "color": "#5aab4f"
+    },
+    {
+      "id": "clint",
+      "name": "Clint Barton",
+      "aka": "Hawkeye",
+      "color": "#7a8fa3"
+    },
+    {
+      "id": "peter-parker",
+      "name": "Peter Parker",
+      "aka": "Spider-Man",
+      "color": "#d64550"
+    },
+    {
+      "id": "wanda",
+      "name": "Wanda Maximoff",
+      "aka": "Scarlet Witch",
+      "color": "#c23b5a"
+    },
+    {
+      "id": "vision",
+      "name": "Vision",
+      "aka": "The Vision",
+      "color": "#d4a056"
+    },
+    {
+      "id": "sam",
+      "name": "Sam Wilson",
+      "aka": "Falcon / Cap",
+      "color": "#c45c2a"
+    },
+    {
+      "id": "bucky",
+      "name": "Bucky Barnes",
+      "aka": "Winter Soldier",
+      "color": "#6b7c93"
+    },
+    {
+      "id": "tchalla",
+      "name": "T'Challa",
+      "aka": "Black Panther",
+      "color": "#7b3fa0"
+    },
+    {
+      "id": "shuri",
+      "name": "Shuri",
+      "aka": "Black Panther",
+      "color": "#9a5bd6"
+    },
+    {
+      "id": "strange",
+      "name": "Stephen Strange",
+      "aka": "Doctor Strange",
+      "color": "#c45a1a"
+    },
+    {
+      "id": "scott",
+      "name": "Scott Lang",
+      "aka": "Ant-Man",
+      "color": "#d4654a"
+    },
+    {
+      "id": "carol",
+      "name": "Carol Danvers",
+      "aka": "Captain Marvel",
+      "color": "#2aa0c4"
+    },
+    {
+      "id": "fury",
+      "name": "Nick Fury",
+      "aka": "S.H.I.E.L.D.",
+      "color": "#4a5568"
+    },
+    {
+      "id": "peter-quill",
+      "name": "Peter Quill",
+      "aka": "Star-Lord",
+      "color": "#d4782a"
+    },
+    {
+      "id": "thanos",
+      "name": "Thanos",
+      "aka": "The Mad Titan",
+      "color": "#7b5ea7"
+    },
+    {
+      "id": "kamala",
+      "name": "Kamala Khan",
+      "aka": "Ms. Marvel",
+      "color": "#e0579a"
+    },
+    {
+      "id": "kate",
+      "name": "Kate Bishop",
+      "aka": "Hawkeye",
+      "color": "#5b8fd4"
+    },
+    {
+      "id": "yelena",
+      "name": "Yelena Belova",
+      "aka": "Black Widow",
+      "color": "#e8c547"
+    },
+    {
+      "id": "kingpin",
+      "name": "Wilson Fisk",
+      "aka": "Kingpin",
+      "color": "#8a7a68"
+    },
+    {
+      "id": "daredevil",
+      "name": "Matt Murdock",
+      "aka": "Daredevil",
+      "color": "#b3261e"
+    },
+    {
+      "id": "deadpool",
+      "name": "Wade Wilson",
+      "aka": "Deadpool",
+      "color": "#e03a3a"
+    },
+    {
+      "id": "wolverine",
+      "name": "Logan",
+      "aka": "Wolverine",
+      "color": "#f2c14e"
+    },
+    {
+      "id": "agatha",
+      "name": "Agatha Harkness",
+      "aka": "The Witch",
+      "color": "#6b4c9a"
+    },
+    {
+      "id": "kang",
+      "name": "Kang",
+      "aka": "The Conqueror",
+      "color": "#3d7a6a"
+    },
+    {
+      "id": "riri",
+      "name": "Riri Williams",
+      "aka": "Ironheart",
+      "color": "#e07a2a"
+    },
+    {
+      "id": "namor",
+      "name": "Namor",
+      "aka": "Talokan",
+      "color": "#2fa88c"
+    },
+    {
+      "id": "shang-chi",
+      "name": "Shang-Chi",
+      "aka": "Ten Rings",
+      "color": "#c9a227"
+    },
+    {
+      "id": "moon-knight",
+      "name": "Marc Spector",
+      "aka": "Moon Knight",
+      "color": "#cfc8b8"
+    },
+    {
+      "id": "echo",
+      "name": "Maya Lopez",
+      "aka": "Echo",
+      "color": "#4a8f7a"
+    },
+    {
+      "id": "punisher",
+      "name": "Frank Castle",
+      "aka": "The Punisher",
+      "color": "#9aa0a8"
+    },
+    {
+      "id": "fantastic-four",
+      "name": "Fantastic Four",
+      "aka": "First Family",
+      "color": "#3f7cd6"
+    },
+    {
+      "id": "doom",
+      "name": "Victor von Doom",
+      "aka": "Doctor Doom",
+      "color": "#3a7a3a"
+    }
+  ],
+  "charFocus": {
+    "iron-man": [
+      "tony"
+    ],
+    "hulk": [
+      "bruce"
+    ],
+    "iron-man-2": [
+      "tony",
+      "fury"
+    ],
+    "thor": [
+      "thor",
+      "loki"
+    ],
+    "cap-1": [
+      "steve"
+    ],
+    "avengers-1": [
+      "tony",
+      "steve",
+      "thor",
+      "loki",
+      "natasha",
+      "bruce",
+      "clint",
+      "fury"
+    ],
+    "iron-man-3": [
+      "tony"
+    ],
+    "thor-2": [
+      "thor",
+      "loki"
+    ],
+    "cap-2": [
+      "steve",
+      "natasha",
+      "bucky",
+      "sam",
+      "fury"
+    ],
+    "gotg-1": [
+      "peter-quill"
+    ],
+    "avengers-2": [
+      "tony",
+      "steve",
+      "thor",
+      "natasha",
+      "bruce",
+      "clint",
+      "wanda",
+      "vision"
+    ],
+    "ant-man-1": [
+      "scott"
+    ],
+    "cap-3": [
+      "steve",
+      "tony",
+      "natasha",
+      "wanda",
+      "vision",
+      "bucky",
+      "sam",
+      "peter-parker",
+      "tchalla",
+      "scott"
+    ],
+    "doc-strange-1": [
+      "strange"
+    ],
+    "gotg-2": [
+      "peter-quill"
+    ],
+    "spiderman-homecoming": [
+      "peter-parker",
+      "tony"
+    ],
+    "thor-3": [
+      "thor",
+      "loki",
+      "bruce"
+    ],
+    "black-panther-1": [
+      "tchalla",
+      "shuri"
+    ],
+    "infinity-war": [
+      "tony",
+      "steve",
+      "thor",
+      "loki",
+      "strange",
+      "peter-parker",
+      "wanda",
+      "vision",
+      "thanos",
+      "peter-quill",
+      "tchalla"
+    ],
+    "ant-man-2": [
+      "scott"
+    ],
+    "captain-marvel": [
+      "carol",
+      "fury"
+    ],
+    "endgame": [
+      "tony",
+      "steve",
+      "thor",
+      "loki",
+      "natasha",
+      "bruce",
+      "clint",
+      "scott",
+      "carol",
+      "wanda",
+      "peter-parker",
+      "thanos"
+    ],
+    "far-from-home": [
+      "peter-parker",
+      "fury"
+    ],
+    "wandavision": [
+      "wanda",
+      "vision",
+      "agatha"
+    ],
+    "falcon-winter-soldier": [
+      "sam",
+      "bucky"
+    ],
+    "loki-s1": [
+      "loki"
+    ],
+    "black-widow": [
+      "natasha",
+      "yelena"
+    ],
+    "shang-chi": [
+      "shang-chi"
+    ],
+    "hawkeye": [
+      "clint",
+      "kate"
+    ],
+    "no-way-home": [
+      "peter-parker",
+      "strange"
+    ],
+    "moon-knight": [
+      "moon-knight"
+    ],
+    "doc-strange-2": [
+      "strange",
+      "wanda"
+    ],
+    "ms-marvel": [
+      "kamala"
+    ],
+    "thor-4": [
+      "thor"
+    ],
+    "wakanda-forever": [
+      "shuri",
+      "namor"
+    ],
+    "gotg-holiday": [
+      "peter-quill"
+    ],
+    "quantumania": [
+      "scott",
+      "kang"
+    ],
+    "gotg-3": [
+      "peter-quill"
+    ],
+    "secret-invasion": [
+      "fury"
+    ],
+    "loki-s2": [
+      "loki"
+    ],
+    "the-marvels": [
+      "carol",
+      "kamala"
+    ],
+    "echo": [
+      "echo",
+      "kingpin"
+    ],
+    "deadpool-wolverine": [
+      "deadpool",
+      "wolverine"
+    ],
+    "agatha": [
+      "agatha",
+      "wanda"
+    ],
+    "cap-4": [
+      "sam"
+    ],
+    "daredevil-born-again-s1": [
+      "daredevil",
+      "kingpin"
+    ],
+    "thunderbolts": [
+      "yelena",
+      "bucky"
+    ],
+    "ironheart": [
+      "riri"
+    ],
+    "fantastic-four": [
+      "fantastic-four"
+    ],
+    "daredevil-born-again-s2": [
+      "daredevil",
+      "kingpin"
+    ],
+    "punisher-one-last-kill": [
+      "punisher",
+      "daredevil"
+    ],
+    "spiderman-brand-new-day": [
+      "peter-parker"
+    ],
+    "avengers-doomsday": [
+      "doom",
+      "fantastic-four"
+    ],
+    "avengers-secret-wars": [
+      "doom"
+    ]
+  }
+}
