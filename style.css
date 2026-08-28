@@ -1,4 +1,4 @@
-  :root{
+:root{
     --bg: #0a0c14;
     --bg-raised: #12151f;
     --line: #262b3a;
@@ -675,8 +675,66 @@
     box-shadow: 0 0 0 1px rgba(255,255,255,0.08);
   }
 
+  /* ---------------------------- UPCOMING / COUNTDOWN / POSTERS ---------------------------- */
+  .poster-fallback{
+    width:100%; height:100%; display:flex; flex-direction:column; align-items:center; justify-content:center;
+    gap:4px; padding:4px; text-align:center; border-radius:inherit;
+    background: linear-gradient(160deg, rgba(242,193,78,0.28), rgba(224,87,74,0.22));
+    border:1px dashed var(--accent);
+  }
+  .cpf-icon{ font-size:18px; line-height:1; }
+  .cpf-title{ font-size:8px; font-family:'IBM Plex Mono',monospace; color:var(--ink); line-height:1.2; }
+
+  #upcomingBanner{ display:flex; gap:14px; flex-wrap:wrap; margin: 0 5vw 18px; }
+  .upcoming-card{
+    display:flex; gap:12px; align-items:center; cursor:pointer;
+    background: linear-gradient(135deg, rgba(224,87,74,0.08), rgba(242,193,78,0.08));
+    border:1px solid var(--p6); border-radius:12px; padding:12px 16px;
+    flex:1 1 320px; min-width:280px; max-width:420px;
+    transition: transform .15s ease, border-color .15s ease;
+  }
+  .upcoming-card:hover{ transform: translateY(-2px); border-color: var(--accent); }
+  .upcoming-poster{ width:52px; height:78px; flex:0 0 auto; border-radius:6px; overflow:hidden; }
+  .upcoming-poster img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .upcoming-copy{ flex:1; min-width:0; }
+  .upcoming-eyebrow{
+    font-family:'IBM Plex Mono',monospace; font-size:9.5px; letter-spacing:.1em; text-transform:uppercase;
+    color: var(--p6); margin-bottom:2px;
+  }
+  .upcoming-title{ font-family:'Space Grotesk',sans-serif; font-weight:700; font-size:14px; color:var(--ink); margin-bottom:4px; }
+  .upcoming-timer{ font-family:'IBM Plex Mono',monospace; font-size:11.5px; color:var(--accent); }
+  .upcoming-timer b{ font-size:13px; }
+
+  .countdown-box{
+    display:flex; align-items:center; gap:14px; text-align:left;
+    background: rgba(242,193,78,0.08); border:1px solid var(--accent);
+    border-radius:9px; padding:12px 14px; margin-bottom:18px;
+  }
+  .countdown-poster{ width:60px; height:90px; flex:0 0 auto; border-radius:7px; overflow:hidden; }
+  .countdown-poster img{ width:100%; height:100%; object-fit:cover; display:block; }
+  .countdown-timer{ flex:1; font-family:'IBM Plex Mono',monospace; font-size:13px; color:var(--accent); }
+  .countdown-timer b{ font-size:15px; }
+
+  /* ---------------------------- QUIZ MODE ---------------------------- */
+  .quiz-progress{ font-family:'IBM Plex Mono',monospace; font-size:11px; color:var(--ink-faint); margin-bottom:10px; }
+  .quiz-prompt{ font-size:17px; font-weight:600; color:var(--ink); margin-bottom:20px; line-height:1.4; }
+  .quiz-options{ display:flex; flex-direction:column; gap:10px; }
+  .quiz-option{
+    text-align:left; padding:12px 14px; border-radius:10px; border:1px solid var(--line);
+    background:var(--bg-raised); color:var(--ink); font-family:'Space Grotesk',sans-serif;
+    font-size:14px; cursor:pointer; transition:border-color .15s ease, background .15s ease;
+  }
+  .quiz-option:hover:not(:disabled){ border-color:var(--accent); }
+  .quiz-option:disabled{ cursor:default; opacity:.7; }
+  .quiz-option.correct{ border-color:#2fa88c; background:rgba(47,168,140,0.12); opacity:1; }
+  .quiz-option.wrong{ border-color:#e0574a; background:rgba(224,87,74,0.12); opacity:1; }
+  .quiz-result{ text-align:center; padding:30px 10px; }
+  .quiz-score{ font-family:'Bebas Neue',sans-serif; font-size:48px; color:var(--accent); }
+  .quiz-result-label{ color:var(--ink-dim); font-size:13px; margin-bottom:22px; }
+
   @media (max-width: 640px){
     header{ padding: 34px 5vw 16px; }
     #stage{ padding: 50px 6vw 70px; }
     .node{ width:140px; margin-right:34px;}
+    .upcoming-card{ min-width:100%; }
   }

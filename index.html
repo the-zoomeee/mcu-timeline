@@ -4,6 +4,8 @@
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <meta name="referrer" content="strict-origin-when-cross-origin">
+<link rel="manifest" href="manifest.json">
+<meta name="theme-color" content="#f2c14e">
 <title>The Multiverse Ledger — MCU Timeline</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Space+Grotesk:wght@400;500;600;700&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
@@ -25,6 +27,7 @@
     <button id="roadModeToggle" class="road-toggle" type="button" aria-pressed="false">
       <span class="road-toggle-dot"></span> Road Mode
     </button>
+    <button id="quizModeToggle" class="road-toggle" type="button">🧠 Quiz</button>
     <div class="search">
       <input type="text" id="searchInput" placeholder="Jump to a title…" autocomplete="off">
       <div class="search-results" id="searchResults"></div>
@@ -36,6 +39,8 @@
     <button id="themeToggle" class="theme-toggle" type="button" title="Toggle light/dark theme" aria-label="Toggle light/dark theme">🌙</button>
   </div>
 </header>
+
+<div id="upcomingBanner"></div>
 
 <div class="hint" id="hintBanner"><button class="hint-close" id="hintClose" aria-label="Dismiss tip">✕</button><b>Tip:</b>&nbsp;click a node to see where its story <em>leads</em> — arrowed arcs point one-way, from a title into whatever it feeds directly. Flip on <b>Road Mode</b> to instead see everything you'd need to watch first, laid out as a tree. Type a name in <b>Trace a character</b> to follow every Loki or Wanda appearance across the graph.</div>
 <div class="thread-banner" id="threadBanner" role="status">
@@ -113,6 +118,17 @@
       <button class="road-close" id="trailerClose">✕</button>
     </div>
     <div id="trailerBody"></div>
+  </div>
+</div>
+
+<div id="quizOverlay"></div>
+<div id="quizModal" role="dialog" aria-modal="true" aria-label="Quiz">
+  <div class="road-card">
+    <div class="road-card-head">
+      <span>MCU Connections Quiz</span>
+      <button class="road-close" id="quizClose">✕</button>
+    </div>
+    <div id="quizBody"></div>
   </div>
 </div>
 

@@ -1,0 +1,20 @@
+{
+  "upcoming": [
+    {
+      "id": "avengers-doomsday",
+      "title": "Avengers: Doomsday",
+      "releaseDate": "2026-12-18T00:00:00-08:00",
+      "region": "US theatrical",
+      "blurb": "Heroes from across the Multiverse Saga converge to face Victor von Doom.",
+      "poster": "posters/avengers-doomsday.png"
+    },
+    {
+      "id": "avengers-secret-wars",
+      "title": "Avengers: Secret Wars",
+      "releaseDate": "2027-12-17T00:00:00-08:00",
+      "region": "US theatrical",
+      "blurb": "The culmination of the Multiverse Saga.",
+      "poster": "posters/avengers-secret-wars.png"
+    }
+  ]
+}

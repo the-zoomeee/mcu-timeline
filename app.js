@@ -763,6 +763,11 @@ function openDetail(id){
   html += '<div class="dyear">'+it.year+' &middot; '+it.type.toUpperCase()+(it.branch ? ' &middot; ALT. TIMELINE' : '')+(it.upcoming ? ' &middot; UPCOMING' : '')+'</div>';
   html += '<h2>'+it.title+'</h2>';
   html += '<div class="dphase" style="color:'+PHASE_HEX[it.phase]+'">'+PHASE_NAME[it.phase]+'</div>';
+
+  if(UPCOMING[id]){
+    html += '<div class="countdown-box" id="countdownBox"><div class="countdown-poster" id="countdownPoster"></div><div class="countdown-timer" id="countdownTimer"></div></div>';
+  }
+
   html += '<p class="blurb">'+it.blurb+'</p>';
 
   html += '<div class="meta-row">';
@@ -825,6 +830,7 @@ function openDetail(id){
   }
 
   detailBody.innerHTML = html;
+  if(UPCOMING[id]) renderCountdown(UPCOMING[id]);
   var items = detailBody.querySelectorAll('.link-item');
   items.forEach(function(elx){
     elx.addEventListener('click', function(){ selectNode(elx.dataset.id); });
@@ -1072,6 +1078,14 @@ function openRoadMap(id){
   roadBodyEl.appendChild(title);
   roadBodyEl.appendChild(count);
 
+  if(effectiveVisited.length){
+    var watchTime = document.createElement('div');
+    watchTime.className = 'road-hidden-note';
+    watchTime.style.marginBottom = '18px';
+    watchTime.textContent = '≈ ' + formatWatchTime(calcWatchMinutes(effectiveVisited.concat([id]))) + ' total watch time';
+    roadBodyEl.appendChild(watchTime);
+  }
+
   if(fullTree.visited.length){
     var toggleWrap = document.createElement('div');
     toggleWrap.className = 'essential-toggle-wrap';
@@ -1295,9 +1309,257 @@ if(threadClearBtn){
   threadClearBtn.addEventListener('click', function(){ setActiveThread(null); });
 }
 
+/* ---------------------------- PWA ---------------------------- */
+if('serviceWorker' in navigator){
+  window.addEventListener('load', function(){
+    navigator.serviceWorker.register('sw.js').catch(function(err){ console.warn('SW registration failed', err); });
+  });
+}
+
+/* ---------------------------- WATCH-TIME CALCULATOR ---------------------------- */
+var AVG_EPISODE_MIN = 48; // rough average per Disney+ MCU episode, for estimation
+function calcWatchMinutes(ids){
+  var total = 0;
+  ids.forEach(function(id){
+    var r = RUNTIME[id];
+    if(!r) return;
+    if(r.min) total += r.min;
+    else if(r.ep) total += r.ep * AVG_EPISODE_MIN;
+  });
+  return total;
+}
+function formatWatchTime(totalMin){
+  var h = Math.floor(totalMin / 60);
+  var m = totalMin % 60;
+  if(h <= 0) return m + ' min';
+  return h + 'h' + (m ? ' ' + m + 'm' : '');
+}
+
+/* ---------------------------- UPCOMING / COUNTDOWN / POSTERS ---------------------------- */
+let UPCOMING = {};
+
+function buildPosterFallback(u){
+  var fb = document.createElement('div');
+  fb.className = 'poster-fallback';
+  var icon = document.createElement('span');
+  icon.className = 'cpf-icon';
+  icon.textContent = '🎬';
+  var t = document.createElement('span');
+  t.className = 'cpf-title';
+  t.textContent = u.title;
+  fb.appendChild(icon);
+  fb.appendChild(t);
+  return fb;
+}
+
+function buildPosterContent(u){
+  if(u.poster){
+    var img = document.createElement('img');
+    img.src = u.poster;
+    img.alt = u.title + ' poster';
+    img.loading = 'lazy';
+    img.addEventListener('error', function(){ img.replaceWith(buildPosterFallback(u)); });
+    return img;
+  }
+  return buildPosterFallback(u);
+}
+
+var countdownTickerStarted = false;
+function startGlobalCountdownTicker(){
+  if(countdownTickerStarted) return;
+  countdownTickerStarted = true;
+  setInterval(function(){
+    document.querySelectorAll('[data-countdown-target]').forEach(function(el){
+      var target = Number(el.dataset.countdownTarget);
+      var diff = target - Date.now();
+      if(diff <= 0){ el.innerHTML = '🎬 Released!'; return; }
+      var d = Math.floor(diff / 86400000);
+      var h = Math.floor((diff % 86400000) / 3600000);
+      var m = Math.floor((diff % 3600000) / 60000);
+      var s = Math.floor((diff % 60000) / 1000);
+      el.innerHTML = '<b>' + d + '</b>d <b>' + h + '</b>h <b>' + m + '</b>m <b>' + s + '</b>s';
+    });
+  }, 1000);
+}
+
+async function loadUpcoming(){
+  try{
+    var res = await fetch('upcoming.json');
+    if(!res.ok) return;
+    var data = await res.json();
+    (data.upcoming || []).forEach(function(u){ UPCOMING[u.id] = u; });
+  }catch(e){
+    console.warn('upcoming.json not loaded (optional feature)', e);
+  }
+}
+
+function renderCountdown(u){
+  var posterWrap = document.getElementById('countdownPoster');
+  if(posterWrap){ posterWrap.innerHTML = ''; posterWrap.appendChild(buildPosterContent(u)); }
+  var timerEl = document.getElementById('countdownTimer');
+  if(timerEl){ timerEl.dataset.countdownTarget = new Date(u.releaseDate).getTime(); }
+  startGlobalCountdownTicker();
+}
+
+function renderUpcomingBanner(){
+  var wrap = document.getElementById('upcomingBanner');
+  if(!wrap) return;
+  var list = Object.keys(UPCOMING).map(function(k){ return UPCOMING[k]; })
+    .sort(function(a, b){ return new Date(a.releaseDate) - new Date(b.releaseDate); });
+  wrap.innerHTML = '';
+  if(!list.length) return;
+
+  list.forEach(function(u){
+    var card = document.createElement('div');
+    card.className = 'upcoming-card';
+
+    var posterBox = document.createElement('div');
+    posterBox.className = 'upcoming-poster';
+    posterBox.appendChild(buildPosterContent(u));
+
+    var copy = document.createElement('div');
+    copy.className = 'upcoming-copy';
+    var eyebrow = document.createElement('div');
+    eyebrow.className = 'upcoming-eyebrow';
+    eyebrow.textContent = 'Coming ' + (u.region || 'soon');
+    var title = document.createElement('div');
+    title.className = 'upcoming-title';
+    title.textContent = u.title;
+    var timer = document.createElement('div');
+    timer.className = 'upcoming-timer';
+    timer.dataset.countdownTarget = new Date(u.releaseDate).getTime();
+
+    copy.appendChild(eyebrow);
+    copy.appendChild(title);
+    copy.appendChild(timer);
+    card.appendChild(posterBox);
+    card.appendChild(copy);
+    card.addEventListener('click', function(){ selectNode(u.id); });
+
+    wrap.appendChild(card);
+  });
+
+  startGlobalCountdownTicker();
+}
+
+/* ---------------------------- QUIZ MODE ---------------------------- */
+var quizOverlayEl = document.getElementById('quizOverlay');
+var quizModalEl = document.getElementById('quizModal');
+var quizState = { questions: [], current: 0, score: 0 };
+
+function quizShuffle(arr){
+  var a = arr.slice();
+  for(var i = a.length - 1; i > 0; i--){
+    var j = Math.floor(Math.random() * (i + 1));
+    var t = a[i]; a[i] = a[j]; a[j] = t;
+  }
+  return a;
+}
+function pickRandom(arr, n){
+  return quizShuffle(arr).slice(0, n);
+}
+
+function buildQuizQuestions(n){
+  var qs = [];
+  var tries = 0;
+  while(qs.length < n && tries < n * 8){
+    tries++;
+    var it = ITEMS[Math.floor(Math.random() * ITEMS.length)];
+    var type = ['leads', 'phase', 'year'][Math.floor(Math.random() * 3)];
+
+    if(type === 'leads'){
+      var targets = Object.keys(GRAPH_OUT[it.id] || {});
+      if(!targets.length) continue;
+      var correct = byId[targets[Math.floor(Math.random() * targets.length)]];
+      var wrongs = pickRandom(ITEMS.filter(function(x){ return x.id !== it.id && x.id !== correct.id; }), 3).map(function(x){ return x.title; });
+      qs.push({ prompt: 'What does "' + it.title + '" lead directly into?', options: quizShuffle([correct.title].concat(wrongs)), answer: correct.title });
+    } else if(type === 'phase'){
+      var wrongPhases = Object.keys(PHASE_NAME).filter(function(p){ return Number(p) !== it.phase; });
+      var wrongNames = pickRandom(wrongPhases, 3).map(function(p){ return PHASE_NAME[p]; });
+      qs.push({ prompt: 'Which phase is "' + it.title + '" part of?', options: quizShuffle([PHASE_NAME[it.phase]].concat(wrongNames)), answer: PHASE_NAME[it.phase] });
+    } else {
+      var wrongYears = pickRandom(ITEMS.filter(function(x){ return x.year !== it.year; }), 3).map(function(x){ return String(x.year); });
+      qs.push({ prompt: 'What year did "' + it.title + '" release?', options: quizShuffle([String(it.year)].concat(wrongYears)), answer: String(it.year) });
+    }
+  }
+  return qs;
+}
+
+function openQuiz(){
+  quizState = { questions: buildQuizQuestions(8), current: 0, score: 0 };
+  quizOverlayEl.classList.add('show');
+  quizModalEl.classList.add('open');
+  renderQuizQuestion();
+}
+function closeQuiz(){
+  quizOverlayEl.classList.remove('show');
+  quizModalEl.classList.remove('open');
+}
+
+function renderQuizQuestion(){
+  var body = document.getElementById('quizBody');
+  var q = quizState.questions[quizState.current];
+  if(!q){
+    body.innerHTML = '<div class="quiz-result"><div class="quiz-score">' + quizState.score + ' / ' + quizState.questions.length + '</div>'
+      + '<div class="quiz-result-label">correct</div>'
+      + '<button class="watch-path-btn" id="quizRetry" type="button">↻ Play again</button></div>';
+    document.getElementById('quizRetry').addEventListener('click', openQuiz);
+    return;
+  }
+  var html = '<div class="quiz-progress">Question ' + (quizState.current + 1) + ' / ' + quizState.questions.length + '</div>';
+  html += '<div class="quiz-prompt">' + q.prompt + '</div><div class="quiz-options">';
+  q.options.forEach(function(opt, i){ html += '<button class="quiz-option" data-opt="' + i + '">' + opt + '</button>'; });
+  html += '</div>';
+  body.innerHTML = html;
+  body.querySelectorAll('.quiz-option').forEach(function(btn){
+    btn.addEventListener('click', function(){
+      var chosen = q.options[Number(btn.dataset.opt)];
+      var correct = chosen === q.answer;
+      body.querySelectorAll('.quiz-option').forEach(function(b){
+        b.disabled = true;
+        if(b.textContent === q.answer) b.classList.add('correct');
+      });
+      if(!correct) btn.classList.add('wrong');
+      if(correct) quizState.score++;
+      setTimeout(function(){ quizState.current++; renderQuizQuestion(); }, 900);
+    });
+  });
+}
+
+document.getElementById('quizModeToggle').addEventListener('click', openQuiz);
+document.getElementById('quizClose').addEventListener('click', closeQuiz);
+quizOverlayEl.addEventListener('click', closeQuiz);
+
 document.addEventListener('keydown', function(e){
-  if(e.key === 'Escape' && activeThread && !detailEl.classList.contains('open') && !roadModalEl.classList.contains('open')){
-    setActiveThread(null);
+  var tag = (document.activeElement && document.activeElement.tagName) || '';
+  if(tag === 'INPUT' || tag === 'TEXTAREA') return;
+
+  if(e.key === 'Escape'){
+    if(quizModalEl.classList.contains('open')){ closeQuiz(); return; }
+    if(trailerModalEl.classList.contains('open')){ closeTrailerModal(); return; }
+    if(roadModalEl.classList.contains('open')){ closeRoadMap(); return; }
+    if(detailEl.classList.contains('open')){
+      detailEl.classList.remove('open'); overlayEl.classList.remove('show'); clearSelection(); return;
+    }
+    if(activeThread){ setActiveThread(null); return; }
+    return;
+  }
+
+  var modalOpen = trailerModalEl.classList.contains('open') || roadModalEl.classList.contains('open')
+    || quizModalEl.classList.contains('open');
+  if(modalOpen) return;
+
+  if(e.key === 'ArrowRight' || e.key === 'ArrowLeft'){
+    e.preventDefault();
+    var order = currentOrder();
+    var curIdx = selectedId ? order.indexOf(selectedId) : -1;
+    var nextIdx = e.key === 'ArrowRight'
+      ? (curIdx < 0 ? 0 : Math.min(order.length - 1, curIdx + 1))
+      : (curIdx < 0 ? 0 : Math.max(0, curIdx - 1));
+    var nextId = order[nextIdx];
+    if(nextId){
+      if(roadMode){ openRoadMap(nextId); } else { selectNode(nextId); }
+    }
   }
 });
 
@@ -1341,5 +1603,6 @@ function init(){
   render();
   initHintDismiss();
   initProgressToggle();
+  loadUpcoming().then(renderUpcomingBanner);
 }
 loadData();
