@@ -87,7 +87,7 @@
     letter-spacing: .02em;
     line-height: .95;
     margin-top: 8px;
-    background: linear-gradient(120deg, #fff 0%, #fff 40%, var(--accent) 100%);
+    background: linear-gradient(120deg, var(--ink) 0%, var(--ink) 40%, var(--accent) 100%);
     -webkit-background-clip: text; background-clip:text; color:transparent;
   }
   .sub{
@@ -369,6 +369,15 @@
     opacity:0; pointer-events:none; transition: opacity .22s ease, transform .22s ease;
   }
   #roadModal.open{ opacity:1; pointer-events:auto; transform:translateX(-50%) translateY(0); }
+
+  #quizOverlay{ position:fixed; inset:0; background:var(--road-overlay-bg); backdrop-filter: blur(3px); z-index:219; opacity:0; pointer-events:none; transition:opacity .22s ease; }
+  #quizOverlay.show{ opacity:1; pointer-events:auto; }
+  #quizModal{
+    position:fixed; top:5vh; left:50%; transform:translateX(-50%) translateY(-12px);
+    width:min(560px, 92vw); max-height:90vh; z-index:220;
+    opacity:0; pointer-events:none; transition: opacity .22s ease, transform .22s ease;
+  }
+  #quizModal.open{ opacity:1; pointer-events:auto; transform:translateX(-50%) translateY(0); }
   .road-card{
     background: linear-gradient(165deg, var(--card-1) 0%, var(--surface-4) 100%);
     border:1px solid var(--line); border-radius:16px;
